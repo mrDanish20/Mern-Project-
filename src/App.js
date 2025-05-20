@@ -9,6 +9,7 @@ import Services from './Components/News';
 import Contact from './Components/Contact';
 import Room from './Components/Room';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Offers from './Components/Offers';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/About' element={<About />}/>
         <Route path='/News' element={<Services />}/>
         <Route path='/Contact' element={<Contact />}/>
+        <Route path='/Offers' element={<Offers />}/>
 
 
       </Routes>

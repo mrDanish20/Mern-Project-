@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import { Link } from 'react-router-dom';  
 
-export default function RoomNavbar() {
+export default function OffersNavbar() {
   return (
- <div className="hero-section" >
+ <div className="hero-section"  >
       <div className="overlay">
         <nav className="navbar navbar-expand-lg navbar-dark py-4">
           <div className="container-fluid d-flex align-items-center justify-content-between px-5">
@@ -31,7 +31,7 @@ export default function RoomNavbar() {
               <li className="nav-item">
                 <Link className="nav-link text-white fs-5" to="/Contact">Contact</Link> 
               </li>
-               <li className="nav-item">
+              <li className="nav-item">
                 <Link className="nav-link text-white fs-5" to="/Offers">Offers</Link> 
               </li>
             </ul>
@@ -51,7 +51,7 @@ export default function RoomNavbar() {
         {/* Hero Content */}
         <div className="hero-content text-center" >
           <h1 className="display-4" style={{ fontSize: "30px" }}>Live <em> Wonderful</em> life</h1>
-          <p className="lead" style={{ fontSize: "80px" }}>ROOMS</p>
+          <p className="lead" style={{ fontSize: "80px" }}>OFFERS</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
-import './Rooms.css';
+import './AllRooms.css';
+
 
 const rooms = [
     {
@@ -74,42 +75,52 @@ const rooms = [
         capacity: 'Max person 2',
         bed: 'King Bed',
         services: 'Wifi, Jacuzzi, Ocean View...'
+    },
+     {
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/10/bf/f7/11/premier-garden-view-rooms.jpg',
+        title: 'Garden View Room',
+        price: '189$',
+        size: '36 ft',
+        capacity: 'Max person 3',
+        bed: 'Queen Bed',
+        services: 'Wifi, Garden Access, Lounge Area...'
     }
 ];
 
 export default function AllRooms() {
-    return (
-        <div>
-            <div style={{ display: 'flex', justifyContent: 'center', padding: '40px 20px'}}>
-                <div className="gallery-text-section">
-                    <h2 style={{ marginTop: "10px" }}>
-                        Our <em>Rooms</em> & Comfort
-                    </h2>
-                    <p style={{ marginTop: "10px" }}>
-                        Discover our luxurious rooms designed for every type of traveler. Whether you're seeking a cozy Double Room or a spacious Family Suite, each room offers modern amenities, elegant interiors, and ultimate comfort. Enjoy features like king-size beds, free Wi-Fi, and scenic views — all crafted to make your stay unforgettable.
-                    </p>
-                </div>
-            </div>
-
-            <div className="rooms-wrapper">
-                {rooms.map((room, index) => (
-                    <div className="room-card" key={index}>
-                        <img src={room.image} alt={room.title} className="room-image" />
-                        <div className="room-info">
-                            <h3> <em>{room.title}</em></h3>
-                            <p>{room.price} <span style={{ color: "white", fontSize: "16px" }} > /Pernight</span> </p>
-                        </div>
-                        <div className="room-hover-overlay">
-                            <h4> <em>{room.title}</em></h4>
-                            <p><strong>Price:</strong> {room.price}</p>
-                            <p><strong>Size:</strong> {room.size}</p>
-                            <p><strong>Capacity:</strong> {room.capacity}</p>
-                            <p><strong>Bed:</strong> {room.bed}</p>
-                            <p><strong>Services:</strong> {room.services}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '40px 20px' }}>
+        <div className="gallery-text-section">
+          <h2 style={{ marginTop: "10px" }}>
+            Our <em>Rooms</em> & Comfort
+          </h2>
+          <p style={{ marginTop: "10px" }}>
+            Discover our luxurious rooms designed for every type of traveler. Whether you're seeking a cozy Double Room or a spacious Family Suite, each room offers modern amenities, elegant interiors, and ultimate comfort. Enjoy features like king-size beds, free Wi-Fi, and scenic views — all crafted to make your stay unforgettable.
+          </p>
         </div>
-    );
+      </div>
+
+      <div className="rooms-wrapper" >
+        {rooms.map((room, index) => (
+          <div className="room-card" key={index} style={{width :"380px"}}> 
+            <img src={room.image} alt={room.title} className="room-image" />
+            <div className="room-details">
+              <h3><em>{room.title}</em></h3>
+              <p className="price">{room.price} <span>/Pernight</span></p>
+              <ul>
+                <li><strong>Size:</strong> {room.size}</li>
+                <li><strong>Capacity:</strong> {room.capacity}</li>
+                <li><strong>Bed:</strong> {room.bed}</li>
+                <li><strong>Services:</strong> {room.services}</li>
+                <button className='book-Now'>Book Now</button>
+                {/* <p className='fw-bold' style={{marginTop :"30px" , fontSize :"20px" , textDecoration : "underline"}}>MORE DETAILS</p> */}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
+

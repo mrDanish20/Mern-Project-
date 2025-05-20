@@ -1,0 +1,130 @@
+.footer {
+    background-color: #1c1f2b;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 20px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-logo .dot {
+    color: orange;
+}
+
+.footer-social {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    margin-left: 100px;
+
+}
+
+.footer-col h4 {
+    text-align: start;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-col p {
+    text-align: start;
+}
+
+.footer-subscribe {
+    display: flex;
+    margin-top: 10px;
+    max-width: 300px;
+    height: 50px;
+}
+
+.footer-subscribe input {
+    padding: 8px;
+    flex: 1;
+    border: none;
+    background-color: #2f3444;
+    color: white;
+}
+
+.footer-subscribe button {
+    background-color: orange;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+    color: orange;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+    }
+
+    .footer-subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-subscribe input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-subscribe button {
+        width: 100%;
+    }
+}

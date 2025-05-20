@@ -9,6 +9,8 @@ import OurServices from './OurServices'
 import CustomersReview from './CustomersReview'
 import Blog from './Blog'
 import HomeBlog from './HomeBlog'
+import Destination from './Destination'
+import Dinning from './Dinning'
 
 
 export default function Home() {
@@ -17,10 +19,12 @@ export default function Home() {
 
       <Navbar />
       <Gallery />
-      {/* <Bannar /> */}
+      <Bannar />
       {/* <OurServices /> */}
+      <Destination />
+      {/* <Dinning /> */}
       <Rooms />
-    <HomeBlog />
+    {/* <HomeBlog /> */}
       {/* <CustomersReview /> */}
       <Footer />
 

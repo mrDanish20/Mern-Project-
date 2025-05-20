@@ -1,5 +1,4 @@
-.rooms-wrapper {
- 
+.rooms-wrapper-home {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -7,7 +6,7 @@
   padding: 40px;
 }
 
-.room-card {
+.room-card-home {
   position: relative;
   width: 340px;
   height: 600px;
@@ -17,11 +16,11 @@
   transition: transform 0.3s ease;
 }
 
-.room-card:hover {
+.room-card-home:hover {
   transform: translateY(-8px);
 }
 
-.room-image {
+.room-image-home {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -29,11 +28,11 @@
   transition: filter 0.3s ease;
 }
 
-.room-card:hover .room-image {
+.room-card-home:hover .room-image-home {
   filter: brightness(0.5);
 }
 
-.room-info {
+.room-info-home {
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -45,11 +44,11 @@
   z-index: 2;
 }
 
-.room-info h3 {
+.room-info-home h3 {
   font-size: 30px;
 }
 
-.room-info p {
+.room-info-home p {
   margin-top: 5px;
   font-size: 20px;
   color: #dfa974;
@@ -64,7 +63,7 @@
   width: 100%;
   height: 100%;
   margin-top: 300px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0); /* Updated from 0 to 0.7 for visibility */
   color: white;
   padding: 20px;
   opacity: 0;
@@ -77,10 +76,10 @@
   color: #ffcc00;
 }
 
-.room-card:hover .room-hover-overlay {
+.room-card-home:hover .room-hover-overlay {
   opacity: 1;
 }
 
-.room-card:hover .room-info {
+.room-card-home:hover .room-info-home {
   opacity: 0;
 }

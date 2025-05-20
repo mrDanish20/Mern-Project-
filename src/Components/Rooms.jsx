@@ -42,27 +42,24 @@ const rooms = [
 
 export default function Rooms() {
     return (
-    
-            <div className="rooms-wrapper">
-
-                {rooms.map((room, index) => (
-                    <div className="room-card" key={index}>
-                        <img src={room.image} alt={room.title} className="room-image" />
-                        <div className="room-info">
-                            <h3> <em>{room.title}</em></h3>
-                            <p>{room.price} <span style={{ color: "white", fontSize: "16px" }} > /Pernight</span> </p>
-                        </div>
-                        <div className="room-hover-overlay">
-                            <h4> <em>{room.title}</em></h4>
-                            <p><strong>Price:</strong> {room.price}</p>
-                            <p><strong>Size:</strong> {room.size}</p>
-                            <p><strong>Capacity:</strong> {room.capacity}</p>
-                            <p><strong>Bed:</strong> {room.bed}</p>
-                            <p><strong>Services:</strong> {room.services}</p>
-                        </div>
+        <div className="rooms-wrapper-home">
+            {rooms.map((room, index) => (
+                <div className="room-card-home" key={index}>
+                    <img src={room.image} alt={room.title} className="room-image-home" />
+                    <div className="room-info-home">
+                        <h3><em>{room.title}</em></h3>
+                        <p>{room.price} <span style={{ color: "white", fontSize: "16px" }}>/Pernight</span></p>
                     </div>
-                ))}
-            </div>
-
+                    <div className="room-hover-overlay">
+                        <h4><em>{room.title}</em></h4>
+                        <p><strong>Price:</strong> {room.price}</p>
+                        <p><strong>Size:</strong> {room.size}</p>
+                        <p><strong>Capacity:</strong> {room.capacity}</p>
+                        <p><strong>Bed:</strong> {room.bed}</p>
+                        <p><strong>Services:</strong> {room.services}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
     );
 }

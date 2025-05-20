@@ -12,7 +12,7 @@ export default function ContactNavbar() {
           <div className="container-fluid d-flex align-items-center justify-content-between px-5">
 
             {/* Logo */}
-            <span className="navbar-brand fs-3 fw-bold me-5" style={{ marginLeft: "100px" }}>Hideaway Resort</span>
+            <span className="navbar-brand fs-3 fw-bold me-5" style={{ marginLeft: "120px" }}>Hideaway Resort</span>
 
             {/* Navigation Links */}
             <ul className="navbar-nav flex-row gap-4 mx-auto">
@@ -31,6 +31,9 @@ export default function ContactNavbar() {
               <li className="nav-item">
                 <Link className="nav-link text-white fs-5" to="/Contact">Contact</Link> 
               </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white fs-5" to="/Offers">Offers</Link> 
+              </li>
             </ul>
 
             {/* Social Icons and Button */}
@@ -40,7 +43,7 @@ export default function ContactNavbar() {
                 <i className="fab fa-twitter text-white fs-5"></i>
                 <i className="fab fa-google-plus-g text-white fs-5"></i>
               </div>
-              <Link className="book-btn" style={{ marginRight: "65px" }}>Book Now</Link>
+              <Link className="book-btn" style={{ marginRight: "65px" }}>Login</Link>
             </div>
           </div>
         </nav>
