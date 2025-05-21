@@ -11,6 +11,7 @@ import Blog from './Blog'
 import HomeBlog from './HomeBlog'
 import Destination from './Destination'
 import Dinning from './Dinning'
+import Video from './Video'
 
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
       {/* <Dinning /> */}
       <Rooms />
     {/* <HomeBlog /> */}
-      {/* <CustomersReview /> */}
+      <CustomersReview />
+      <Video />
       <Footer />
 
     </div>

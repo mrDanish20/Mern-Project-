@@ -10,6 +10,8 @@ import Contact from './Components/Contact';
 import Room from './Components/Room';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Offers from './Components/Offers';
+import Login from './Components/Login';
+import Register from './Components/Register';
 
 
 
@@ -29,6 +31,10 @@ function App() {
         <Route path='/News' element={<Services />}/>
         <Route path='/Contact' element={<Contact />}/>
         <Route path='/Offers' element={<Offers />}/>
+        <Route path='/Login' element={<Login />}/>
+        <Route path='/Register' element={<Register />}/>
+
+
 
 
       </Routes>

@@ -44,7 +44,7 @@ export default function Navbar() {
                 <i className="fab fa-twitter text-white fs-5"></i>
                 <i className="fab fa-google-plus-g text-white fs-5"></i>
               </div>
-              <Link className="book-btn" style={{ marginRight: "65px" }}>Book Now</Link>     
+              <Link to="/Login" className="book-btn" style={{ marginRight: "65px" }}>Login</Link>     
 
             </div>
        
