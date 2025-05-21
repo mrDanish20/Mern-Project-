@@ -3,6 +3,7 @@ import AboutNavbar from './AboutNavbar'
 import AboutUs from './Aboutus'
 import Footer from './Footer'
 import Dinning from './Dinning'
+import Bannar from './Bannar'
 
 
 export default function About() {
@@ -10,7 +11,9 @@ export default function About() {
     <div>
       <AboutNavbar />
       <AboutUs />
-      <Dinning />
+      <Bannar />
+
+      {/* <Dinning /> */}
       <Footer />
     </div>
   )

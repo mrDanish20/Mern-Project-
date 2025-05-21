@@ -44,7 +44,7 @@
 /* NAVBAR STYLES */
 .navbar {
   position: relative;
-  z-index: 1000; /* Ensure it's above overlay */
+  z-index: 1000;
 }
 
 .navbar .nav-item {

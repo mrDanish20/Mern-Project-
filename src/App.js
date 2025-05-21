@@ -12,6 +12,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Offers from './Components/Offers';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import Footer from './Components/Footer';
+
 
 
 
@@ -20,27 +22,29 @@ function App() {
   return (
     <BrowserRouter>
 
-    <div className="App">
-
-    
-      <Routes>
-     
-        <Route path='/' element={<Home />}/>
-        <Route path='/Room' element={<Room />}/>
-        <Route path='/About' element={<About />}/>
-        <Route path='/News' element={<Services />}/>
-        <Route path='/Contact' element={<Contact />}/>
-        <Route path='/Offers' element={<Offers />}/>
-        <Route path='/Login' element={<Login />}/>
-        <Route path='/Register' element={<Register />}/>
+      <div className="App">
 
 
+        <Routes>
+
+          <Route path='/' element={<Home />} />
+          <Route path='/Room' element={<Room />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/News' element={<Services />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Offers' element={<Offers />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Register' element={<Register />} />
 
 
-      </Routes>
 
      
-    </div>
+ 
+
+        </Routes>
+
+
+      </div>
 
     </BrowserRouter>
   );
