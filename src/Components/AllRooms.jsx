@@ -91,14 +91,14 @@ export default function AllRooms() {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'center', padding: '40px 20px' }}>
-        <div className="gallery-text-section">
+        {/* <div className="gallery-text-section">
           <h2 style={{ marginTop: "10px" }}>
             Our <em>Rooms</em> & Comfort
           </h2>
           <p style={{ marginTop: "10px" }}>
             Discover our luxurious rooms designed for every type of traveler. Whether you're seeking a cozy Double Room or a spacious Family Suite, each room offers modern amenities, elegant interiors, and ultimate comfort. Enjoy features like king-size beds, free Wi-Fi, and scenic views — all crafted to make your stay unforgettable.
           </p>
-        </div>
+        </div> */}
       </div>
 
       <div className="rooms-wrapper" >

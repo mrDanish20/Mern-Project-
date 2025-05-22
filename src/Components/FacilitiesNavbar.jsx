@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import { Link } from 'react-router-dom';  
 
-export default function OffersNavbar() {
+export default function FacilitiesNavbar() {
   return (
  <div className="hero-section"  >
       <div className="overlay">
@@ -51,7 +51,7 @@ export default function OffersNavbar() {
         {/* Hero Content */}
         <div className="hero-content text-center" >
           <h1 className="display-4" style={{ fontSize: "30px" }}>Live <em> Wonderful</em> life</h1>
-          <p className="lead" style={{ fontSize: "80px" }}>OFFERS</p>
+          <p className="lead" style={{ fontSize: "80px" }}>FACILITES</p>
         </div>
       </div>
     </div>

@@ -1,28 +1,36 @@
 import React from 'react';
-import './Footer.css'; // We'll update this CSS file
-import footerimg from '../assets/images/footer-bg.png'
+import './Footer.css';
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+} from 'react-icons/fa';
 
 export default function Footer({ withBackgroundImage = false }) {
   return (
     <footer className={`footer-container ${withBackgroundImage ? 'with-bg-image' : ''}`}>
       {withBackgroundImage && <div className="footer-overlay"></div>}
-      
-      <div className="footer-content" style={{marginTop :"50px" , textAlign :"start"}}>
+
+      <div className="footer-content" style={{ marginTop: '50px', textAlign: 'start' }}>
         {/* First Column - Contact Info */}
         <div className="footer-column">
-          <h2 className="footer-logo">Luxeflub</h2>
+          <h2 className="footer-logo">Hideway</h2>
           <div className="contact-info">
-            <p>1800-121-3637</p>
-            <p>+9-7032-101-768</p>
+            <p><FaPhoneAlt /> 1800-121-3637</p>
+          
           </div>
           <div className="email-info">
-            <p>info@example.com</p>
-            <p>info@example.com</p>
+            <p><FaEnvelope /> info@example.com</p>
+          
           </div>
           <div className="address">
-            <p>20/plot No. 20, 5th phase,</p>
+            <p><FaMapMarkerAlt /> 20/plot No. 20, 5th phase,</p>
             <p>LIB Colony, Japan</p>
           </div>
+          
         </div>
 
         {/* Second Column - Our Links */}
