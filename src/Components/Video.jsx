@@ -5,18 +5,25 @@ import videobg from '../assets/images/video-bg.png';
 export default function Video() {
   const [isPlaying, setIsPlaying] = useState(false);
 
+  // Handle video end
+  const handleVideoEnd = () => {
+    setIsPlaying(false); // Switch back to background image
+  };
+
   return (
-    <div style={{ position: 'relative', width: '100vw', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
       {isPlaying ? (
         <video
           src={videoSrc}
           controls
           autoPlay
           muted
+          onEnded={handleVideoEnd}
           style={{
-            width: '100vw',
+            width: '100%',
             height: 'auto',
             borderRadius: 0,
+            display: 'block',
           }}
         />
       ) : (
@@ -25,7 +32,7 @@ export default function Video() {
             backgroundImage: `url(${videobg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            width: '100vw',
+            width: '100%',
             height: '500px',
             cursor: 'pointer',
             position: 'relative',
