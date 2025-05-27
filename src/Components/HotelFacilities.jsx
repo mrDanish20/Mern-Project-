@@ -7,37 +7,34 @@ import img4 from '../assets/images/explore-icon-4.png'
 import img5 from '../assets/images/explore-icon-5.png'
 import img6 from '../assets/images/explore-icon-6.png'
 
-
-
-
 const facilities = [
   {
-    img: img1 ,
+    img: img1,
     title: "Quality Room",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   },
   {
-    img:  img2 ,
+    img: img2,
     title: "Private Beach",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   },
   {
-    img:  img3 ,
+    img: img3,
     title: "Best Accommodation",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   },
   {
-    img: img4 ,
+    img: img4,
     title: "Wellness & Spa",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   },
   {
-    img:  img5,
+    img: img5,
     title: "Restaurants & Bars",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   },
   {
-    img:  img6 ,
+    img: img6,
     title: "Special Offers",
     desc: "Nullam molestie lacus sit amet velit fermentum feugiat. Mauris auctor eget nunc sit amet."
   }
@@ -46,6 +43,11 @@ const facilities = [
 export default function HotelFacilities() {
   return (
     <section className="hotel-section">
+      {/* ✅ Added Explore on top */}
+      <p className="subtitle light" style={{ textTransform: "uppercase", letterSpacing: "2px", marginBottom: "5px", fontWeight: "600", color: "#A6978D" }}>
+        Explore
+      </p>
+
       <h2 className="title">The Hotel</h2>
       <p className="subtitle">
         Proin consectetur non dolor vitae pulvinar. Pellentesque sollicitudin
@@ -55,7 +57,7 @@ export default function HotelFacilities() {
         Cras lobortis pulvinar dolor, sit amet ullamcorper dolor iaculis vel.
       </p>
 
-      <div className="facility-grid container" >
+      <div className="facility-grid container">
         {facilities.map((item, index) => (
           <div className="facility-card" key={index}>
             <div className="facility-icon">

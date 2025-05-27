@@ -13,6 +13,8 @@ import Offers from './Components/Offers';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Footer from './Components/Footer';
+import RoomsDetails from './Components/RoomsDetails';
+import Details from './Components/Details';
 
 
 
@@ -35,6 +37,7 @@ function App() {
           <Route path='/Offers' element={<Offers />} />
           <Route path='/Login' element={<Login />} />
           <Route path='/Register' element={<Register />} />
+          <Route path='/Details' element={<Details/>}/>
 
 
 

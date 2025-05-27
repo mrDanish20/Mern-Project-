@@ -1,5 +1,6 @@
 import React from 'react';
 import './AllRooms.css';
+import { Link } from 'react-router-dom';
 
 
 const rooms = [
@@ -113,7 +114,8 @@ export default function AllRooms() {
                 <li><strong>Capacity:</strong> {room.capacity}</li>
                 <li><strong>Bed:</strong> {room.bed}</li>
                 <li><strong>Services:</strong> {room.services}</li>
-                <button className='book-Now'>Book Now</button>
+
+                <Link to="/Details" style={{color :"black" , fontSize :"16px", marginTop :"10px"}}>Read More</Link>
                 {/* <p className='fw-bold' style={{marginTop :"30px" , fontSize :"20px" , textDecoration : "underline"}}>MORE DETAILS</p> */}
               </ul>
             </div>
